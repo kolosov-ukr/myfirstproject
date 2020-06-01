@@ -1,36 +1,19 @@
-"use strict";
-
-let number = 5;
-
-const obj = {
-    name: "Alex",
-    age: 25,
-    isMarried: false, 
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?', '');
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
-console.log(obj.name);
-// alert('Hello');
-// const result = confirm ('Are you here ?');
-// console.log(result);
-// const answer = prompt("Вам есть 18?", "18");
-// console.log(typeof(answer));
 
-const answers = [];
-      answers [0] = prompt('Как ваше имя ?', '');
-      answers [1] = prompt('Как ваша фамилия ?', '');
-      answers [2] = prompt('сколько вам лет ?', '');
+const a = prompt('Один из последних просмотренных фильмов ?' , ''),
+      b = prompt('На сколько оцените его?' , ''),
+      c = prompt('Один из последних просмотренных фильмов ?' , ''),
+      d = prompt('На сколько оцените его?' , '');
 
-console.log(4 + +"5");
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-let incr = 10,
-    decr = 10;
-incr++;
-decr--;
-console.log(incr);
-console.log(decr);
-
-const isChecked = true,
-      isClose = false;
-console.log(isChecked && isClose);
-
-
+console.log(personalMovieDB);
 
